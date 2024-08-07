@@ -1,0 +1,770 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    width: 100%;
+    height: max-content;
+}
+/* .Box{
+    width: 50%;
+    height: 300px;
+}
+.one{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+
+}
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+} */
+
+.Body{
+    width: 100%;
+    height: auto;
+}
+
+.Header{
+    width: 100%;
+    height: 120px;
+    /* background-color: yellow; */
+}
+.headerup{
+    width: 100%;
+    height: 40%;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+}
+.headerupicon{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 130px;
+}
+.facebookicon{
+    width: 7%;
+    height: 55%;
+    /* background-color: blue; */
+}
+.facebookicon > img{
+    width: 100%;
+    height: 100%;
+}
+.twitericon{
+    width: 7%;
+    height: 55%;
+    /* background-color: green; */
+}
+.twitericon > img{
+    width: 100%;
+    height: 100%;
+}
+.headerupicon > nav{
+    color: white;
+}
+.headerdown{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerdownlogo{
+    width: 20%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerdownlogo > img{
+    width: 35%;
+    height: 90%;
+}
+.headerdowntext{
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+}
+.headerdown > button{
+    width: 10%;
+    height: 70%;
+    border: 2px solid red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Sections{
+    width: 100%;
+    height: auto;
+}
+.section1{
+    width: 100%;
+    height: 520px;
+    background-image: url(./img/herobackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.hamburger{
+    width: 5%;
+    height: 15%;
+    display: flex;
+    display: none;
+    /* background-color: red; */
+}
+.hamburger > img{
+    width: 100%;
+    height: 100%;
+}
+
+.section1content{
+    width: 75%;
+    height: 99%;
+    /* background-color: yellow; */
+    color: red;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 150px;
+    gap: 20px;
+}
+.section1content > h1 > span{
+    font-weight: 400;
+    font-size: 40px;
+}
+.section1contentp{
+    width: 72%;
+    height: 100px;
+    border: 3px solid white;
+    font-size: 18px; 
+    font-weight: 500;
+}
+.section1contentdate{
+    width: 60%;
+    height: 85px;
+    /* background-color: grey; */
+}
+.section1contentdate > h1{
+    color: black;
+    font-size: 38px;
+    font-weight: 800;
+}
+.section1contentdate > p{
+    color: black;
+    font-size: 23px;
+}
+
+
+.section2{
+    width: 100%;
+    height: 450px;
+    background-image: url(./img/Images/programbg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.section2 > h1{
+    color: white;
+}
+.section2 > .line{
+    width: 10%;
+    height: 1.7px;
+    background-color: red;
+    border-radius: 50px;
+}
+.section2programs{
+    width: 90%;
+    height: 50%;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: space-between;
+}
+.section2progcard{
+    width: 19%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.309);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.progcardimg{
+    width: 28%;
+    height: 30%;
+    /* background-color: yellow; */
+    margin-top: 10px;
+}
+.progcardimg > img{
+    width: 100%;
+    height: 100%;
+}
+.progtext{
+    width: 75%;
+    height: 50%;
+    /* background-color: green; */
+    color: red;
+}
+.progtext > h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+.progtext > p{
+    /* font-weight: 500; */
+    font-size: 13px;
+    color: lightgrey;
+}
+.section2 > button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 3%;
+}
+.section2 > button :hover{
+    border-bottom: 2px solid lightgrey;
+}
+
+
+.section3{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.section3 > h1{
+    margin-top: 3%;
+}
+.line{
+    width: 10%;
+    height: 1.7px;
+    background-color: red;
+    border-radius: 50px;
+}
+.section3content{
+    width: 100%;
+    height: 80%;
+    /* background-color: lightgrey; */
+    margin-top: 5%;
+}
+.Profile{
+    width: 90%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    gap: 50px;
+}
+.profilecard{
+    width: 45%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5%;
+}
+/* .profilecardimg{
+    width: 25%;
+    height: 75%;
+    background-color: aqua;
+} */
+.profilecardtext{
+    width: 74%;
+    height: 90%;
+    /* background-color: aquamarine; */
+}
+.profilecardtext  > span{
+    font-size: 15px;
+    color: red;
+    font-style: italic;
+    font-weight: 100;
+}
+.profilecardtext > p{
+    font-size: 10px;
+    margin-top: 15px;
+}
+.personsimg{
+    width: 130px;
+    height: 130px;
+    /* background-color: blueviolet; */
+    position: absolute;
+    z-index: 1;
+}
+.personsimg > img{
+    width: 100%;
+    height: 100%;
+}
+.sideimg{
+    width: 100px;
+    height: 100px;
+    /* background-color: brown; */
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+.sideimg > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section4{
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.section4 > h1{
+    color: white;
+}
+.section4logos{
+    width: 90%;
+    height: 70%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.who{
+    width: 9%;
+    height: 30%;
+    /* background-color: green; */
+}
+.who > img{
+    width: 100%;
+    height: 100%;
+}
+.Blogo{
+    width: 9%;
+    height: 30%;
+    /* background-color: green; */
+}
+.Blogo > img{
+    width: 100%;
+    height: 100%;
+}
+.cd{
+    width: 9%;
+    height: 30%;
+    /* background-color: green; */
+}
+.cd > img{
+    width: 100%;
+    height: 100%;
+}
+.microsoft{
+    width: 9%;
+    height: 30%;
+    /* background-color: green; */
+}
+.microsoft > img{
+    width: 100%;
+    height: 100%;
+}
+.bbc{
+    width: 9%;
+    height: 30%;
+    /* background-color: green; */
+}.bbc >img{
+    width: 100%;
+    height: 100%;
+}
+.section5{
+    width: 100%;
+    height: 150px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.section5img{
+    width: 15%;
+    height: 50%;
+    /* background-color: red; */
+}
+.section5img > img{
+    width: 100%;
+    height: 100%;
+}
+.section5text{
+    width: 40%;
+    height: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .Header{
+        display: none;
+    }
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .section1{
+        width: 100%;
+        height: 850px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .section1content{
+        width: 90%;
+    height: 98%;
+    /* background-color: yellow; */
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: flex-start;
+    margin-top: 40px;
+    }
+    .section1content > h1{
+
+        font-size: 45px;
+    }
+    
+
+    .section1content > h1 > span{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .section1contentp{
+        width: 80%;
+        height: 260px;
+        border: 3px solid white;
+        font-size: 18px; 
+        font-weight: 500;
+    }
+    .section1contentdate{
+        width: 95%;
+        height: 85px;
+        /* background-color: grey; */
+    }
+    .section1contentdate > h1{
+        color: black;
+        font-size: 27px;
+        font-weight: 800;
+    }
+    .section1contentdate > p{
+        color: black;
+        font-size: 20px;
+    }
+
+
+    .section2{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .section2 > h1{
+        color: white;
+        margin-top: 20px;
+    }
+    .section2 > .line{
+        width: 50%;
+        height: 1.7px;
+        background-color: red;
+        border-radius: 50px;
+        margin-bottom: 30px;
+    }
+    .section2programs{
+        width: 90%;
+        height: autopx;
+        /* background-color: #000; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 30px;
+    }
+    .section2progcard{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.309); */
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+    }
+    .progcardimg{
+        width: 20%;
+        height: 20%;
+        /* background-color: yellow; */
+        margin-top: 10px;
+    }
+    .progcardimg > img{
+        width: 100%;
+        height: 100%;
+    }
+    .progtext{
+        width: 78%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        /* background-color: green; */
+        color: red;
+    }
+    .progtext > h2{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .progtext > p{
+        font-weight: 500;
+        font-size: 13px;
+        color: lightgrey;
+    }
+    .section2 > button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 3%;
+    }
+    .section2 > button :hover{
+        border-bottom: 2px solid lightgrey;
+    }
+    
+    
+    
+    .section3{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.section3 > h1{
+    margin-top: 50px;
+}
+.line{
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+.section3content{
+    width: 100%;
+    height: 80%;
+    /* background-color: lightgrey; */
+    margin-top: 5%;
+}
+.Profile{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+    gap: 50px;
+}
+.profilecard{
+    width: 90%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5%;
+}
+/* .profilecardimg{
+    width: 25%;
+    height: 75%;
+    background-color: aqua;
+} */
+.profilecardtext{
+    width: 61%;
+    height: 90%;
+    /* background-color: aquamarine; */
+}
+.profilecardtext > h1{
+    font-size: 20px;
+}
+.profilecardtext  > span{
+    font-size: 15px;
+    color: red;
+    font-style: italic;
+    font-weight: 100;
+}
+.profilecardtext > p{
+    font-size: 13px;
+    margin-top: 15px;
+}
+.personsimg{
+    width: 120px;
+    height: 120px;
+    /* background-color: blueviolet; */
+    position: absolute;
+    z-index: 1;
+}
+.personsimg > img{
+    width: 100%;
+    height: 100%;
+}
+.sideimg{
+    width: 90px;
+    height: 90px;
+    /* background-color: brown; */
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.sideimg > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section4{
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.section4 > h1{
+    color: white;
+}
+.section4logos{
+    width: 90%;
+    height: 70%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+}
+.who{
+    width: 25%;
+    height: 50%;
+    /* background-color: green; */
+}
+.who > img{
+    width: 100%;
+    height: 100%;
+}
+.Blogo{
+    width: 25%;
+    height: 50%;
+    /* background-color: green; */
+}
+.Blogo > img{
+    width: 100%;
+    height: 100%;
+}
+.cd{
+    width: 30%;
+    height: 50%;
+    /* background-color: green; */
+}
+.cd > img{
+    width: 100%;
+    height: 100%;
+}
+.microsoft{
+    width: 25%;
+    height: 50%;
+    /* background-color: green; */
+}
+.microsoft > img{
+    width: 100%;
+    height: 100%;
+}
+.bbc{
+    width: 25%;
+    height: 50%;
+    /* background-color: green; */
+}.bbc >img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.section5{
+    width: 100%;
+    height: 150px;
+    /* background-color: yellow; */
+    gap: 10px;
+}
+.section5img{
+    width: 50%;
+    height: 50%;
+    /* background-color: red; */
+}
+.section5img > img{
+    width: 100%;
+    height: 100%;
+}
+.section5text{
+    width: 45%;
+    height: 50%;
+    font-weight: 600;
+    /* background-color: aqua; */
+}
+
+
+    
+    
+}
